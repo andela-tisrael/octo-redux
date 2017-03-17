@@ -17,7 +17,8 @@ export default class SignupForm extends React.Component {
   }
   onSubmit(e) {
     e.preventDefault();
-    console.log(this.state);
+    console.log(this.props);
+    this.props.userSignupRequest(this.state)
   }
   onChange(e) {
     this.setState ({
@@ -101,4 +102,8 @@ export default class SignupForm extends React.Component {
           </form>
     );
   }
+}
+
+SignupForm.propTypes = {
+  userSignupRequest: React.PropTypes.func.isRequired
 }
