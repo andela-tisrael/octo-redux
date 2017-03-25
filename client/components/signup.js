@@ -7,7 +7,7 @@ class SignUpPage extends React.Component {
   render() {
     console.log(this.props)
     const {signupRequest} = this.props
-    // console.log(this.props)
+    console.log(this.props);
     return (
       <div className="row">
         <div className="col-md-4 col-md-offset-4">
